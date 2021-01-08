@@ -35,9 +35,19 @@ $SEback: #1f1c24;
 
 #wrapper-navbar {
 	.top-header-holder {
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
 		height: 200px;
 		background: $PRback;
+		justify-items: center;
 		//background-image: url(../img/topheaderback.png);
+		.logo-holder {
+			src: url(../img/logo.svg);
+			align-self: center;
+		}
+		.social-media-holder {
+			align-self: end;
+		}
 	}
 	#main-nav {
 		background: $SEback;
