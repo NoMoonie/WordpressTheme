@@ -1,0 +1,85 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+body {
+	color: lighten($color: #1f1c24, $amount: 50%);
+}
+body::-webkit-scrollbar {
+	width: 12px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+	background: lighten(
+		$color: #1f1c24,
+		$amount: 50%
+	); /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+	background: darken(
+		$color: #1f1c24,
+		$amount: 5%
+	); /* color of the scroll thumb */
+	border: 2px solid lighten($color: #1f1c24, $amount: 50%); /* creates padding around scroll thumb */
+}
+
+$primary: lighten(
+	$color: #1f1c24,
+	$amount: 50%,
+);
+
+$secondary: #ff00cc;
+
+#wrapper-footer {
+	background: #110a1aff;
+}
+
+#wrapper-navbar {
+	.top-header-holder {
+		height: 200px;
+		background: #110a1aff;
+		//background-image: url(../img/topheaderback.png);
+	}
+	#main-nav {
+		background: #1f1c24;
+		border-top: 1px solid $primary;
+		border-bottom: 1px solid $primary;
+		padding: 0px;
+		ul {
+			flex: 1;
+			justify-content: space-evenly;
+			li {
+				a {
+					font-size: 22px;
+					text-transform: uppercase;
+					font-family: "Luckiest Guy", cursive;
+					padding: 1em, 0.5em;
+				}
+				&.current_page_item {
+					a {
+						color: $secondary;
+					}
+				}
+			}
+		}
+		.dropdown-menu {
+			background: #1f1c24;
+			border-bottom: 1px solid $primary;
+			border-right: 1px solid $primary;
+			border-left: 1px solid $primary;
+			border-radius: 0;
+			li {
+				a {
+					color: $primary;
+					&:hover {
+						background: $primary;
+						color: $secondary;
+					}
+				}
+			}
+		}
+	}
+}
+
+.home-banner {
+	height: 1080px;
+	background: #ccc;
+	background-image: url(../img/butteflyshort.png);
+	background-size: cover;
+}
