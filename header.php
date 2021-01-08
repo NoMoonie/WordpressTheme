@@ -32,10 +32,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div id="wrapper-navbar">
 
 		<div class="top-header-holder">
-			<div class="logo-holder"></div>
+			<div class="spacer"></div>
+			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" width="90px" alt="NoMoonie Logo" class="logo-holder">
 			<div class="social-media-holder">
-				<i class="fab fa-itch-io "></i>
-				<i class="fab fa-github-square "></i>
+				<i class="fab fa-itch-io fa-2x"></i>
+				<i class="fab fa-github-square fa-2x"></i>
 			</div>
 		</div>
 
