@@ -31,7 +31,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar">
 
-		<div class="top-header-holder"></div>
+		<div class="top-header-holder">
+			<div class="logo-holder"></div>
+			<div class="social-media-holder">
+				<i class="fab fa-itch-io "></i>
+				<i class="fab fa-github-square "></i>
+			</div>
+		</div>
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 

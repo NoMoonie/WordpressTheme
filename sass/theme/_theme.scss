@@ -21,23 +21,26 @@ body::-webkit-scrollbar-thumb {
 
 $primary: lighten(
 	$color: #1f1c24,
-	$amount: 50%,
+	$amount: 30%,
 );
 
 $secondary: #ff00cc;
 
+$PRback: #110a1aff;
+$SEback: #1f1c24;
+
 #wrapper-footer {
-	background: #110a1aff;
+	background: $PRback;
 }
 
 #wrapper-navbar {
 	.top-header-holder {
 		height: 200px;
-		background: #110a1aff;
+		background: $PRback;
 		//background-image: url(../img/topheaderback.png);
 	}
 	#main-nav {
-		background: #1f1c24;
+		background: $SEback;
 		border-top: 1px solid $primary;
 		border-bottom: 1px solid $primary;
 		padding: 0px;
@@ -59,7 +62,7 @@ $secondary: #ff00cc;
 			}
 		}
 		.dropdown-menu {
-			background: #1f1c24;
+			background: $SEback;
 			border-bottom: 1px solid $primary;
 			border-right: 1px solid $primary;
 			border-left: 1px solid $primary;
