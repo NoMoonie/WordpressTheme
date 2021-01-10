@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="top-header-holder">
 			<div class="spacer"></div>
-			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" width="90px" alt="NoMoonie Logo" class="logo-holder">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/butterfly-logo.svg" width="90px" alt="NoMoonie Logo" class="logo-holder">
 			<div class="social-media-holder">
 				<i class="fab fa-itch-io fa-2x"></i>
 				<i class="fab fa-github-square fa-2x"></i>
@@ -51,7 +51,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="container">
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
 				</button>
 
 				<!-- The WordPress Menu goes here -->

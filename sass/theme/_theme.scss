@@ -39,14 +39,16 @@ $SEback: #1f1c24;
 		grid-template-columns: 33% 33% 33%;
 		height: 200px;
 		background: $PRback;
-		justify-items: center;
-		//background-image: url(../img/topheaderback.png);
 		.logo-holder {
-			src: url(../img/logo.svg);
 			align-self: center;
+			justify-self: center;
 		}
 		.social-media-holder {
 			align-self: end;
+			justify-self: end;
+			&:hover {
+				color: $secondary;
+			}
 		}
 	}
 	#main-nav {
@@ -59,9 +61,9 @@ $SEback: #1f1c24;
 			justify-content: space-evenly;
 			li {
 				a {
-					font-size: 22px;
+					font-size: 22pt;
 					text-transform: uppercase;
-					font-family: "Luckiest Guy", cursive;
+					font-family: "ThaleahFat";
 					padding: 1em, 0.5em;
 				}
 				&.current_page_item {
@@ -74,8 +76,6 @@ $SEback: #1f1c24;
 		.dropdown-menu {
 			background: $SEback;
 			border-bottom: 1px solid $primary;
-			border-right: 1px solid $primary;
-			border-left: 1px solid $primary;
 			border-radius: 0;
 			li {
 				a {
@@ -88,11 +88,27 @@ $SEback: #1f1c24;
 			}
 		}
 	}
+	#main-nav {
+		.container {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+
+	.navbar-toggler-icon {
+		color: $primary;
+	}
 }
 
 .home-banner {
 	height: 1080px;
-	background: #ccc;
-	background-image: url(../img/butteflyshort.png);
-	background-size: cover;
+	background: $PRback;
+	background-image: url(../img/butterflypattern.png);
+	background-size: contain;
+}
+
+#wrapper-footer {
+	background: $SEback;
+	border-top: 1px solid $primary;
+	border-bottom: 1px solid $primary;
 }
